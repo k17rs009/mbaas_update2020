@@ -11,7 +11,11 @@
     <script>
     let ncmb = new NCMB(appKey, clientKey);
     var Omikuji_Class = ncmb.DataStore("Omikuji_Class");
-    let key = "score";
+    let key = "score";  
+    function omikuji(){
+      var dice = Math.floor(Math.random() * 3);
+      
+    }  
     
     
     </script>
@@ -37,7 +41,7 @@
 	  </h2>
  
   <div>
-    <a onclick="fetchAll()" class="btn btn-outline-secondary" role="buton">占う</a>
+    <a onclick="omikuji()" class="btn btn-outline-secondary" role="buton">占う</a>
    
   </div>
  
