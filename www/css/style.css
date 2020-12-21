@@ -2,9 +2,9 @@
 
 #fetch{
   font-size: 30px;
-  color: rgb(50, 132, 255);
+  color: rgb(50, 255, 228);
 }
-h2 {
+h1 {
   padding: .75em 1em;
   border: 1px solid #ccc;
   border-top: 3px solid #3498db;
