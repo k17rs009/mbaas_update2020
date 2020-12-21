@@ -26,7 +26,13 @@
           var data = results.get('message');
           $("#fetch1").html(data);
         })
-       } 
+      } else{
+        $("#fetch").html("凶");
+                Omikuji_Class.equalTo('objectId', 'Zl7Och5P6SA6Qh98').fetch().then(function(results) {
+                  var data = results.get('message');
+                  $("#fetch1").html(data);
+                })
+      }
     }  
     
     
