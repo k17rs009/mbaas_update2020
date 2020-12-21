@@ -16,11 +16,17 @@
       var dice = Math.floor(Math.random() * 3);
       if (dice == 0) {
         $("#fetch").html("大吉！！");
-              Omikuji_Class.equalTo('objectId', '').fetch().then(function(results) {
-                var data = results.get('message');
-                $("#fetch1").html(data);
-              })
-      }
+        Omikuji_Class.equalTo('objectId', '').fetch().then(function(results) {
+          var data = results.get('message');
+          $("#fetch1").html(data);
+        })
+      } else if  (dice == 1) {
+        $("#fetch").html("吉！");  
+        Omikuji_Class.equalTo('objectId', '').fetch().then(function(results) {
+          var data = results.get('message');
+          $("#fetch1").html(data);
+        })
+       } 
     }  
     
     
