@@ -14,7 +14,13 @@
     let key = "score";  
     function omikuji(){
       var dice = Math.floor(Math.random() * 3);
-      
+      if (dice == 0) {
+        $("#fetch").html("大吉！！");
+              Omikuji_Class.equalTo('objectId', '').fetch().then(function(results) {
+                var data = results.get('message');
+                $("#fetch1").html(data);
+              })
+      }
     }  
     
     
