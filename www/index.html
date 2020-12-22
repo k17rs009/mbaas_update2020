@@ -13,20 +13,20 @@
     var Omikuji_Class = ncmb.DataStore("Omikuji_Class");
     let key = "score";  
     function omikuji(){
-      var dice = Math.floor(Math.random() * 3);
+      var dice = Math.floor(Math.random() * 4);
       if (dice == 0) {
         $("#fetch").html("大吉！！");
-        Omikuji_Class.equalTo('objectId', '').fetch().then(function(results) {
+        Omikuji_Class.equalTo('objectId', 'jQwkV6qdpkMqBlLi').fetch().then(function(results) {
           var data = results.get('message');
           $("#fetch1").html(data);
         })
-      } else if  (dice == 1) {
+      } else if (dice == 1) {
         $("#fetch").html("吉！");  
         Omikuji_Class.equalTo('objectId', 'BzWuLqX4zyJWAzKg').fetch().then(function(results) {
           var data = results.get('message');
           $("#fetch1").html(data);
         })
-      } else{
+      } else if (dice ==2){
         $("#fetch").html("凶");
                 Omikuji_Class.equalTo('objectId', 'Zl7Och5P6SA6Qh98').fetch().then(function(results) {
                   var data = results.get('message');
