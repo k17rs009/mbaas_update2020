@@ -38,6 +38,12 @@
           var data = results.get('message');
           $("#fetch1").html(data);
         })
+      } else if (dice ==4){
+        $("#fetch").html("小吉");
+        Omikuji_Class.equalTo('objectId', 'Fmak5il6NRdhXVTF').fetch().then(function(results) {
+          var data = results.get('message');
+          $("#fetch1").html(data);
+        })
       }
     }  
     
